@@ -4,7 +4,7 @@ var ClozeCard = function(fullText, clozeDeletion) {
 	this.clozeDeletion = clozeDeletion;
 
 	this.partialText = function(fullText, clozeDeletion) {
-		// TODO implement logic for partial text
+		// logic for partial text
 		// first see if clozeDeletion is contained within fullText
 		if (this.fullText.indexOf(this.clozeDeletion) !== -1) {
 			// is found within fullText
@@ -25,15 +25,11 @@ var ClozeCard = function(fullText, clozeDeletion) {
 	}
 };
 
-// creates the printInfo method and applies it to all ClozeCard objects
-ClozeCard.prototype.printInfo = function() {
-    console.log("fullText: " + this.fullText + " clozeDeletion: " + this.clozeDeletion + " partialText: " + this.partialText);
+// creates the printCloze method and applies it to all ClozeCard objects
+ClozeCard.prototype.printCloze = function() {
+    console.log("fullText: " + this.fullText + " clozeDeletion: " + 
+    	this.clozeDeletion + " partialText: " + this.partialText);
 };
-
-  // prints out a different card
-//  this.printClose = function() {
-//      console.log("fullText: " + this.fullText + " clozeDeletion: " + this.clozeDeletion+ " partialText: " + this.partialText);
-// };
 
 // exporting the ClozeCard constructor which we will use in flashCard.js
 module.exports = ClozeCard;

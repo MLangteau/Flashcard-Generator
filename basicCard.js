@@ -7,10 +7,11 @@ var BasicCard = function (front, back) {
   this.front = front,
   this.back = back
 }
-  // prints out a different card
-  this.printable = function() {
-      console.log("front: " + this.front + " back: " + this.back);
-  };
+
+// creates the printBasic method and applies it to all BasicCard objects
+BasicCard.prototype.printBasic = function() {
+    console.log("front: " + this.front + " back: " + this.back);
+};
 
 // exporting the BasicCard constructor.  flashcard.js will require it.
 module.exports = BasicCard;
