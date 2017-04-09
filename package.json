@@ -1,0 +1,23 @@
+{
+  "name": "Flashcard-Generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MLangteau/Flashcard-Generator.git"
+  },
+  "keywords": [],
+  "author": "MLangteau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MLangteau/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/MLangteau/Flashcard-Generator#readme",
+  "dependencies": {
+    "inquirer": "^3.0.6"
+  }
+}
